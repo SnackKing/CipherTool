@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script type="text/javascript" src="bower_components/crypto-js/crypto-js.js"></script>
+<script type="text/javascript" src="ciphertest.js"></script>
+
+<h3> Snack Mast3r's Super Secret Cipher Machine </h3>
+<select id="option" onchange="changeForm()">
+  <option value="encipher">Encipher</option>
+  <option value="decipher">Decipher</option>  
+</select>
+
+<form id="encipherForm" action="" style="display: block;" onsubmit=" return encipher()">
+  Plaintext:<br>
+  <input type="text" name="pt" value=""><br>
+  Key:<br>
+  <input type="text" name="key" value=""><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+<form id="decipherForm" action="" style="display: none;" onsubmit=" return decipher()">
+  CipherText:<br>
+  <input type="text" name="ct" value=""><br>
+  Key:<br>
+  <input type="text" name="key" value=""><br><br>
+  <input type="submit" value="Submit">
+</form>
+</body>
+<p id = "result"> </p>
+</html>
